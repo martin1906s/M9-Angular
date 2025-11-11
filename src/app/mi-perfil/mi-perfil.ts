@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './mi-perfil.css',
 })
 export class MiPerfil {
-
+  constructor() {
+    alert('¡Bienvenido al perfil, estás dentro de la aplicación!');
+    console.log('Se cargó el componente de perfil correctamente.');
+  }
 }
