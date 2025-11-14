@@ -23,4 +23,13 @@ export class MiPerfil {
     this.direccion = 'Calle Falsa 123, Ciudad, País';
     this.telefono = '0987654321';
   }
+  ngDoCheck() {
+    console.log('Componente Actualizado');
+  }
+  cambiarEdad() {
+    this.edad = 19;
+  }
+  cambiarDireccion() {
+    this.direccion = 'Av. Siempre Viva 742, Ciudad, País';
+  }
 }
