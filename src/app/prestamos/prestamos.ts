@@ -1,10 +1,19 @@
 import { AsciiPipe } from './../pipes/ascii';
 import { Component } from '@angular/core';
 import { Transacciones } from '../transacciones/transacciones';
+import { UpperCasePipe, TitleCasePipe, LowerCasePipe, JsonPipe, SlicePipe } from '@angular/common';
 
 @Component({
   selector: 'app-prestamos',
-  imports: [Transacciones],
+  imports: [
+    Transacciones,
+    UpperCasePipe,
+    TitleCasePipe,
+    LowerCasePipe,
+    JsonPipe,
+    SlicePipe,
+    AsciiPipe
+  ],
   templateUrl: './prestamos.html',
   styleUrl: './prestamos.css',
 })
