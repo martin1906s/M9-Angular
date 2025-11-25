@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './cuenta.css',
 })
 export class Cuenta {
-
+  public mostrarCuenta: boolean = true;
+  mostrarCompCuenta(valor: boolean) {
+    this.mostrarCuenta = valor;
+  }
 }
