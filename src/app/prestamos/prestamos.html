@@ -1,1 +1,9 @@
-<p>prestamos works!</p>
+<h1>Mi Super Protafolio</h1>
+<a [href]="url" [class.activo]="redirigir" target="_blank">Ir a mi Portafolio</a>
+@if(redirigir){
+<p>¡El enlace funciona correctamente!</p>
+<button (click)="cambiarRedirigir()">Ocultar Enlace a Mi Super Protafolio</button>
+}@else {
+<p>Lo sentimos, este enlace no está disponible.</p>
+<button (click)="cambiarRedirigir()">Mostrar Enlace a Mi Super Protafolio</button>
+}
